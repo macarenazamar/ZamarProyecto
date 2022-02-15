@@ -1,0 +1,369 @@
+*{
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+body{
+    background-color: #202020ef;
+}
+.header__index{
+    display: grid;
+    grid-template-columns:auto;
+    align-items: center;   
+    justify-content:first baseline ;
+}
+.header__inicio{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.titulo{
+    display: none;
+}
+.header__logo{
+    background-position: center;
+    
+}
+nav ul{
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: #ebc91e;
+    background-position: center; 
+    list-style-type: none;
+}
+nav li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 20px;
+	color: black;
+    font-weight: bold;
+	text-decoration: none;
+    display: inline-block;
+    float: right;
+    
+}
+nav li a:hover{
+        color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section__product{
+    display: grid;
+    height: auto;
+    background-image: url(../imagenes/motor3.jpg);
+    background-position: center;
+    height: 80vh;
+   
+}
+.section__title{
+    color: #dac879;
+    margin: 3%;
+    padding: 10px;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vh;
+    
+}
+.section__description{
+    color: rgb(165, 163, 154);
+    margin: 5%;
+    padding: 2px;
+    width: 70vh;
+    height: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: transparent;
+    
+}
+
+.boton{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 10px;
+    margin: 5%;
+    color: whitesmoke;
+    background: #8e8f82;
+    font-family: 'Roboto', sans-serif;
+}
+.boton:hover{
+	color: #dbeb1e;
+}
+
+
+
+
+.section__ubicacion{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    margin-block-end: 10%;
+}
+
+.ubication{    
+    width: 200%;
+    height: 20%;
+}
+.ubicacion_derecha{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.section__cv{
+    display: grid;
+    grid-template-columns:auto auto;
+    justify-content: space-evenly;    
+    margin-block-end: 10%;
+}
+
+.cv{
+    width: 200%;
+    height: 20%;
+    
+     ;
+}
+.cv__img{
+    width: 0%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.marcas{
+    width: 95%;
+    margin: auto;   
+    overflow: hidden;
+}
+.marcas ul{
+    padding: 0;
+    width: 400%;
+    display: flex;
+    
+    animation: cambio 10s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+.marcas li{
+    list-style: none;
+    width: 100%;
+}
+.marcas img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0; }
+    20%{margin-left: 0; }
+    25%{margin-left: -100%; }
+    45%{margin-left: -100%; }
+    50%{margin-left: -200%; }
+    70%{margin-left: -200%; }
+    75%{margin-left: -300%; }
+    100%{margin-left: -300%; }
+}
+
+.datos{
+    width: 100px;
+}
+
+.nosotros{
+    display: grid;
+    justify-content:space-between;
+    justify-items: center;
+    grid-template-columns:auto;
+    
+
+
+}
+.fotos_empresa{
+    width: 95%;
+    margin: 3%;   
+    overflow: hidden;
+}
+.fotos_empresa ul {
+    padding: 0;
+    width: 400%;
+    display: flex;
+    animation: cambio 10s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+.fotos_empresa li{
+    list-style: none;
+    width: 100%;
+}
+.fotos_empresa img{
+    
+    width: 100%;
+}
+
+
+.nosotros_historia1{
+    color: thistle;
+    margin: 2%;
+    padding: 1px;
+    width: 100vh;
+    height: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.nosotros_historia{
+    color: thistle;
+    margin: 2%;
+    padding: 1px;
+    width: 100vh;
+    height: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.nosotos_historia2{
+    color: thistle;
+    margin: 2%;
+    padding: 1px;
+    width: 100vh;
+    height: auto;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+
+
+.servicio-productos{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr); 
+    grid-template-rows:repeat(3, 1fr);
+    height: 100vh;
+
+}
+/* terminar de acomodar
+ponerle una clase a las imagenes y luego probar
+.nombre-clase-img{
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;} 
+    esto es para sacrle el fondo balnco */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    display: grid;
+    align-items: center;
+    max-width: 1300px;
+    
+    
+    justify-content: space-between;
+    
+    background-color: #202020;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container_footer{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+.footer_contact{
+    width: 100%;    
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 40px;
+}
+.footer_contact h3{
+    font-size: 20px;
+}
+.footer_contact p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+.footer_contact img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+.footer_copy{
+    display: block;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: black;   
+}
+ 
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px){
+    .header__inicio{
+        flex-direction: column;
+    }
+    .section__product{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+    }
+    .product{
+        width: 100%;
+        
+    }
+    .product__img{
+        display: none;
+    }
+    .section__description{
+        width: 50%;
+    }
+    .section__ubicacion{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+    }
+    .ubication{
+        width: 100%;
+    }
+    .section__cv{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: flex-start;
+        margin: auto;
+    }
+    .cv{
+        background-image: url(../imagenes/TRABAJA.jpg);
+    }
+    .cv__img{
+        display: none;
+    }
+}
+    
+@media screen and (max-width: 425px){
+
+}
