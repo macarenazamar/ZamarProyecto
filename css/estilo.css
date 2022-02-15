@@ -65,6 +65,7 @@ nav li a:hover{
     height: auto;
     background-image: url(../imagenes/motor3.jpg);
     background-position: center;
+    margin: 5px;
     height: 80vh;
    
 }
@@ -121,6 +122,7 @@ nav li a:hover{
     width: 50%;
     height: 50%;
     background-color: rgba(255, 255, 255, 0);
+    margin: 50px;
 
 }
 
@@ -163,6 +165,7 @@ nav li a:hover{
 }
 .marcas img{
     width: 100%;
+    margin-block-end: 100px;
 }
 
 @keyframes cambio{
@@ -273,11 +276,8 @@ ponerle una clase a las imagenes y luego probar
 .footer{
     display: grid;
     align-items: center;
-    max-width: 1300px;
-    
-    
+    max-width: 1600px;   
     justify-content: space-between;
-    
     background-color: #202020;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
