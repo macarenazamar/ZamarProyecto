@@ -183,67 +183,10 @@ nav li a:hover{
     width: 100px;
 }
 
-.nosotros{
-    display: grid;
-    justify-content:space-between;
-    justify-items: center;
-    grid-template-columns:auto;
-    
-
-
-}
-.fotos_empresa{
-    width: 95%;
-    margin: 3%;   
-    overflow: hidden;
-}
-.fotos_empresa ul {
-    padding: 0;
-    width: 400%;
-    display: flex;
-    animation: cambio 10s infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in;
-}
-.fotos_empresa li{
-    list-style: none;
-    width: 100%;
-}
-.fotos_empresa img{
-    
-    width: 100%;
+.nosotros-texto{
+    color:#dac879
 }
 
-
-.nosotros_historia1{
-    color: thistle;
-    margin: 2%;
-    padding: 1px;
-    width: 100vh;
-    height: auto;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-
-}
-.nosotros_historia{
-    color: thistle;
-    margin: 2%;
-    padding: 1px;
-    width: 100vh;
-    height: auto;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-.nosotos_historia2{
-    color: thistle;
-    margin: 2%;
-    padding: 1px;
-    width: 100vh;
-    height: auto;
-    text-align:center;
-    font-family: 'Roboto', sans-serif;
-}
- 
 
 
 .servicio-productos{
@@ -261,7 +204,14 @@ ponerle una clase a las imagenes y luego probar
     esto es para sacrle el fondo balnco */
 
 
+.titulo-formulario{
+    color:#ebc91e
+}
 
+.formulario{
+    color: white
+    
+}
 
 
 
