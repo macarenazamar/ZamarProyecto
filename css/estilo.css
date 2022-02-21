@@ -105,26 +105,14 @@ nav li a:hover{
 }
 
 
-
-
-.section__ubicacion{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    margin-block-end: 10%;
+.maps__location{
+    width: 100%;
 }
 
-.ubication{    
-    width: 200%;
-    height: 20%;
-}
-.ubicacion_derecha{
-    width: 50%;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0);
-    margin: 50px;
 
-}
+
+
+
 
 .section__cv{
     display: grid;
@@ -133,16 +121,10 @@ nav li a:hover{
     margin-block-end: 10%;
 }
 
-.cv{
-    width: 200%;
-    height: 20%;
+
+.trabajo__img{
+    width: 100%;
     
-     ;
-}
-.cv__img{
-    width: 0%;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0);
 }
 
 .marcas{
@@ -275,8 +257,11 @@ ponerle una clase a las imagenes y luego probar
  
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px){
+   
     .header__inicio{
         flex-direction: column;
+        height: auto;
+        width: 50%;
     }
     .section__product{
         display: flex;
