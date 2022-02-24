@@ -1,53 +1,4 @@
-*{
-    margin: 0px; 
-    padding: 0px; 
-    box-sizing: border-box;
-}
-body{
-    background-color: #202020ef;
-}
-.header__index{
-    display: grid;
-    grid-template-columns:auto;
-    align-items: center;   
-    justify-content:first baseline ;
-}
-.header__inicio{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    
-}
 
-.titulo{
-    display: none;
-}
-.header__logo{
-    background-position: center;
-    
-}
-nav ul{
-    width: 100%;
-    margin: 0;
-    padding: 1.5rem;
-    background-color: #ebc91e;
-    background-position: center; 
-    list-style-type: none;
-}
-nav li a{
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    padding: 15px 20px;
-	color: black;
-    font-weight: bold;
-	text-decoration: none;
-    display: inline-block;
-    float: right;
-    
-}
-nav li a:hover{
-        color: grey;
-}
 
 
 
@@ -188,14 +139,9 @@ ponerle una clase a las imagenes y luego probar
     esto es para sacrle el fondo balnco */
 
 
-.titulo-formulario{
-    color:#ebc91e
-}
 
-.formulario{
-    color: white
-    
-}
+
+
 
 
 
