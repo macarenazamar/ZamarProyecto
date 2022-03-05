@@ -316,8 +316,9 @@ nav li a:hover {
   padding: 40px;
 }
 
-.footer_contact h3 {
-  font-size: 20px;
+.footer_cotact a {
+  text-decoration: none;
+  padding: 2px 1px 0;
 }
 
 .footer_contact p {
