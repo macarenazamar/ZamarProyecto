@@ -18,7 +18,10 @@ body {
 }
 
 .nosotros-texto {
+  width: 90%;
   color: #dac879;
+  line-height: 250%;
+  margin: 10vh;
 }
 
 .imag-text {
@@ -28,8 +31,10 @@ body {
 .servicio-productos {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   height: 100vh;
 }
 
@@ -86,6 +91,10 @@ ponerle una clase a las imagenes y luego probar
   color: whitesmoke;
   background: #8e8f82;
   font-family: 'Roboto', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .boton:hover {
@@ -94,6 +103,9 @@ ponerle una clase a las imagenes y luego probar
 
 .maps__location {
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section__cv {
@@ -132,6 +144,12 @@ ponerle una clase a las imagenes y luego probar
   width: 50vh;
   position: center;
   margin: 10vh;
+}
+
+.espacio {
+  width: 100%;
+  padding: 1vh;
+  margin: 5%;
 }
 
 .header__index {

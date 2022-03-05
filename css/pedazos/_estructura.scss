@@ -14,7 +14,10 @@ body{
 }
 
 .nosotros-texto{
-    color:#dac879
+    width: 90%;
+    color: #dac879;
+    line-height: 250%;
+    margin: 10vh;
 }
 
 .imag-text{
@@ -74,12 +77,15 @@ ponerle una clase a las imagenes y luego probar
     color: whitesmoke;
     background: #8e8f82;
     font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-items: center;
 }
 .boton:hover{
     color: #dbeb1e;
 }
 .maps__location{
     width: 100%;
+    align-items: center;
 }
 .section__cv{
     display: grid;
@@ -95,12 +101,15 @@ ponerle una clase a las imagenes y luego probar
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 .form-ancho{
     width: 50vh;
     position: center;
     margin: 10vh;
-    
+}
+.espacio{
+    width: 100%;
+    padding: 1vh;
+    margin: 5%;
 }
     
