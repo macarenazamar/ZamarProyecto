@@ -1,7 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -30,8 +31,10 @@ body {
 .servicio-productos {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   height: 100vh;
 }
 
@@ -88,7 +91,9 @@ ponerle una clase a las imagenes y luego probar
   color: whitesmoke;
   background: #8e8f82;
   font-family: 'Roboto', sans-serif;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
 }
 
@@ -98,15 +103,21 @@ ponerle una clase a las imagenes y luego probar
 
 .maps__location {
   width: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section__cv {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-evenly;
-  margin-block-end: 10%;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-margin-after: 10%;
+          margin-block-end: 10%;
 }
 
 .trabajo__img {
@@ -117,9 +128,16 @@ ponerle una clase a las imagenes y luego probar
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .form-ancho {
@@ -131,7 +149,7 @@ ponerle una clase a las imagenes y luego probar
 .espacio {
   width: 100%;
   padding: 1vh;
-  margin: 5%;
+  margin: 4%;
 }
 
 .servyproduct {
@@ -146,22 +164,30 @@ ponerle una clase a las imagenes y luego probar
 }
 
 .servyproduct:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .img_servyproduct {
   width: 30vh;
   height: 20vh;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .header__index {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: auto;
-  align-items: center;
-  justify-content: first baseline;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: first baseline;
+      -ms-flex-pack: first baseline;
+          justify-content: first baseline;
 }
 
 .header__inicio {
@@ -169,7 +195,9 @@ ponerle una clase a las imagenes y luego probar
   display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo {
@@ -212,9 +240,12 @@ nav li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  animation: cambio 10s infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in;
+  -webkit-animation: cambio 10s infinite;
+          animation: cambio 10s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 .marcas li {
@@ -224,7 +255,8 @@ nav li a:hover {
 
 .marcas img {
   width: 100%;
-  margin-block-end: 100px;
+  -webkit-margin-after: 100px;
+          margin-block-end: 100px;
 }
 
 @-webkit-keyframes cambio {
@@ -284,9 +316,13 @@ nav li a:hover {
 .footer {
   display: -ms-grid;
   display: grid;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1600px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #202020;
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
@@ -331,5 +367,30 @@ nav li a:hover {
   margin-left: 10px;
   margin-top: 20px;
   background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__inicio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 50%;
+  }
+  .nosotros-texto {
+    width: 96%;
+    line-height: 218%;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

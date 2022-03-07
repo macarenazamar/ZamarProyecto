@@ -1,7 +1,16 @@
 @media screen and (max-width: 768px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
    
     .header__inicio{
         flex-direction: column;
         height: auto;
         width: 50%;
+    }
+    .nosotros-texto{
+        width: 96%;
+        line-height: 218%;
+        margin: 0; }
     }
