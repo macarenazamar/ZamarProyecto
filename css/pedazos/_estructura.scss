@@ -5,6 +5,9 @@
 }
 body{
     background-color: #202020ef;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+   
 }
 .titulo{
     display: none;
@@ -18,6 +21,7 @@ body{
     color: #dac879;
     line-height: 250%;
     margin: 10vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 .imag-text{
