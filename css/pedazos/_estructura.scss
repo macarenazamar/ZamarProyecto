@@ -33,15 +33,12 @@ body{
     grid-template-columns:repeat(3, 1fr); 
     grid-template-rows:repeat(3, 1fr);
     height: 100vh;
-} /* terminar de acomodar
-ponerle una clase a las imagenes y luego probar
-.nombre-clase-img{
-    filter:brightness(1.1);
-    mix-blend-mode: multiply;} 
-    esto es para sacrle el fondo balnco */
+} 
 
 .titulo-formulario{
-    color:#ebc91e
+    background-color: #3b3b35;
+    color:#ebc91e;
+    padding: 10px;
 }
 .formulario{
     color: white
@@ -49,7 +46,7 @@ ponerle una clase a las imagenes y luego probar
 .section__product{
     display: grid;
     height: auto;
-    background-image: url(../imagenes/motor3.jpg);
+    
     background-position: center;
     margin: 5px;
     height: 80vh; 

@@ -7,6 +7,8 @@
 
 body {
   background-color: #202020ef;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 .titulo {
@@ -22,6 +24,7 @@ body {
   color: #dac879;
   line-height: 250%;
   margin: 10vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 .imag-text {
@@ -38,14 +41,10 @@ body {
   height: 100vh;
 }
 
-/* terminar de acomodar
-ponerle una clase a las imagenes y luego probar
-.nombre-clase-img{
-    filter:brightness(1.1);
-    mix-blend-mode: multiply;} 
-    esto es para sacrle el fondo balnco */
 .titulo-formulario {
+  background-color: #3b3b35;
   color: #ebc91e;
+  padding: 10px;
 }
 
 .formulario {
@@ -56,7 +55,6 @@ ponerle una clase a las imagenes y luego probar
   display: -ms-grid;
   display: grid;
   height: auto;
-  background-image: url(../imagenes/motor3.jpg);
   background-position: center;
   margin: 5px;
   height: 80vh;
@@ -326,12 +324,15 @@ nav li a:hover {
   background-color: #202020;
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  text-decoration: none;
 }
 
 .container_footer {
   width: 100%;
   margin-top: 20px;
   margin-left: 10px;
+  text-decoration: none;
 }
 
 .footer_contact {
@@ -339,6 +340,7 @@ nav li a:hover {
   margin-top: 20px;
   margin-left: 10px;
   padding: 40px;
+  text-decoration: none;
 }
 
 .footer_cotact a {
@@ -350,12 +352,19 @@ nav li a:hover {
   font-size: 14px;
   color: #C7C7C7;
   margin-top: 20px;
+  text-decoration: none;
 }
 
 .footer_contact img {
   width: 40px;
   height: 40px;
   margin-top: 10px;
+  text-decoration: none;
+}
+
+.footer_contact a {
+  text-decoration: none;
+  color: #C7C7C7;
 }
 
 .footer_copy {
@@ -367,6 +376,7 @@ nav li a:hover {
   margin-left: 10px;
   margin-top: 20px;
   background-color: black;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
