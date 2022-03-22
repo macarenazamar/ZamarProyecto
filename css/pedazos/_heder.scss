@@ -9,10 +9,12 @@
     display: flex;
     justify-items: center;
     align-items: center; 
+    float: right;
 }
 
 .header__logo{
-    background-position: center;   
+    background-position: center;
+      
 }
 nav ul{
     width: 100%;

@@ -7,12 +7,18 @@
     nav ul{
         display: flex;
         flex-direction: column;
+        float: right;
     }
    
     .header__inicio{
         flex-direction: column;
         height: auto;
-        width: 50%;
+        width: 100%;
+    }
+    .header__logo{
+        background-position: center;
+        align-self: center;
+        width: 100%;   
     }
     .nosotros-texto{
         width: 96%;
@@ -33,7 +39,12 @@
         .header__inicio{
             flex-direction: column;
             height: auto;
-            width: 50%;
+            width: 100%;
+        }
+        .header__logo{
+            background-position: center;
+            align-self: center;
+            width: 100%;   
         }
         .nosotros-texto{
             width: 96%;

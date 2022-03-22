@@ -20,10 +20,10 @@ body {
 }
 
 .nosotros-texto {
-  width: 90%;
   color: #dac879;
   line-height: 250%;
   margin: 3vh;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -99,11 +99,34 @@ body {
   color: #dbeb1e;
 }
 
+.boton-form {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 25px;
+  padding: 5px;
+  margin: 5%;
+  color: whitesmoke;
+  background: #8e8f82;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 20vh;
+}
+
+.boton-form:hover {
+  color: #dbeb1e;
+}
+
 .maps__location {
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .section__cv {
@@ -139,7 +162,7 @@ body {
 }
 
 .form-ancho {
-  width: 50vh;
+  width: 100vh;
   position: center;
   margin: 10vh;
 }
@@ -196,6 +219,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  float: right;
 }
 
 .header__logo {
@@ -390,6 +414,7 @@ nav li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    float: right;
   }
   .header__inicio {
     -webkit-box-orient: vertical;
@@ -397,7 +422,14 @@ nav li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    width: 50%;
+    width: 100%;
+  }
+  .header__logo {
+    background-position: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
   }
   .nosotros-texto {
     width: 96%;
@@ -428,7 +460,14 @@ nav li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    width: 50%;
+    width: 100%;
+  }
+  .header__logo {
+    background-position: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
   }
   .nosotros-texto {
     width: 96%;
